@@ -141,12 +141,12 @@ export default class Projeto extends React.Component {
                             Editar
                         </Button>
                     </Link> : null}
-                    {this.state.tipo === 1 && this.state.estado === false ?
+                    {this.state.tipo === 1 || this.state.tipo === 2 && this.state.estado === false ?
                         <Button style={{ marginTop: -35, borderRadius: 50, width: 140, height: 52, marginRight: 15, backgroundColor: '#43a047', border: 'none' }}
-                            type="button"
-                            onClick={() => this.UpdateEstado(this.state.projetoId)}
-                            className="btn btn-primary float-right">
-                            Concluido?
+                        type="button"
+                        onClick={() => this.UpdateEstado(this.state.projetoId)}
+                        className="btn btn-primary float-right">
+                        Concluido?
                         </Button>
                         : null}
                     <div className="">

@@ -13,7 +13,7 @@ import axios from 'axios'
 import Navbar from '../components/Navbar/Navbar'
 import ListaDevelopers from '../components/Lists/ListaDevelopers'
 import CardDevelopers from '../components/Cards/CardsTotalUsers'
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, CardGroup } from 'react-bootstrap';
 import CardSkills from '../components/Cards/CardTotalSkills'
 import CardInteresses from '../components/Cards/CardTotalInteresses'
 import CardProjetos from '../components/Cards/CardTotalProjetos'
@@ -39,10 +39,12 @@ export default class Social extends React.Component {
                         </nav>
                     </div>
                     <div style={{ marginTop: -22 }} className="row ml-1 mr-4">
-                        <CardDevelopers />
-                        <CardSkills />
-                        <CardInteresses />
-                        <CardProjetos />
+                        <CardGroup>
+                            <CardDevelopers />
+                            <CardSkills />
+                            <CardInteresses />
+                            <CardProjetos />
+                        </CardGroup>
                         <ListaDevelopers />
                         <div className="col-xl-6 mt-3">
                             <UsersDisponiveis />
