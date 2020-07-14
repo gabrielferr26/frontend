@@ -1,0 +1,149 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+
+@font-face{
+    font-family: LightG;
+    src: url(./assets/fonts/ProductSans-Light.ttf)
+}
+
+@font-face{
+    font-family: MediumG;
+    src: url(./assets/fonts/ProductSans-Medium.ttf)
+}
+
+
+@font-face{
+    font-family: RegularG;
+    src: url(./assets/fonts/ProductSans-Regular.ttf)
+}
+
+@font-face{
+    font-family: BoldG;
+    src: url(./assets/fonts/ProductSans-Bold.ttf)
+}
+
+
+body{
+    background-color: #eceff1 !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	
+}
+
+main{
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+}
+
+.navbar-down{
+    background-color: white;
+}
+
+/*  Cards  */
+
+.dropdown-item{
+    font-family: 'LightG' !important;
+}
+
+
+.form-control{
+    font-family: 'LightG' !important;
+}
+
+label{
+    font-family: 'LightG' !important;
+}
+
+.breadcrumb-item{
+    font-family: 'LightG' !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu{
+    border: none;
+    
+     border-radius: 5px !important;
+     border: none !important;
+     margin-top: 20px !important;
+     width: 250px !important;
+}
+
+.dropdown-item{
+    
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    margin-top: -10px !important;
+    margin-bottom: -10px !important;
+    font-family: RegularG !important;
+    font-size: 16px !important;
+}
+.breadcrumb{
+    background-color: transparent !important;
+    margin-top: -15px;
+    font-family: RegularG;
+    color: #1976d2 !important;  
+}
+
+.table{
+    font-family: RegularG !important;
+    background-color: white !important;
+    font-size: 90px !important;
+}
+
+
+
+tbody{
+    font-size: 90px !important;
+    margin-left: 30px !important;
+}
+
+td{
+    font-size: 16px !important;
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+table {
+    /* collapsed, because the bottom shadow on thead tr is hidden otherwise */
+    border-collapse: collapse !important;
+    margin:10px !important;
+}
+
+.card-columns{
+    background-color:  blue 0.3 !important;
+    column-count: 4 !important;
+      
+}
+
+
+@media (max-width: 576px) {
+
+     main{
+         margin-right: 10px;
+
+    }
+    
+  }
+
+  

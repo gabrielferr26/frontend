@@ -1,0 +1,69 @@
+.table{
+    margin-left: -15px;
+    font-family: Regular;
+}
+
+thead{
+    font-family: Regular;
+    font-size: 14px;
+    height: 900px !important;
+    padding-left: 30px !important;
+    padding-top: 100px;
+}
+
+td, th{
+    padding-left: 50px !important;
+    padding-right: 60px !important;
+}
+
+td{
+    font-size: 14px;
+}
+
+th{
+    height: 70px;
+}
+
+.buttons{
+    width: 20px;
+}
+
+.btn-add{
+    margin-right: 17px;
+    margin-top: -70px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    vertical-align: middle;
+    font-family: Regular;
+    
+}
+
+@media (max-width:768px) { 
+    .table{
+        margin-left: -15px;
+    }
+    
+    td, th{
+        padding-left: 30px !important;
+        padding-right: 10px !important;
+    }
+    .btn-add{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        vertical-align: middle;
+        font-family: Regular;
+    }
+
+    .table-interesses{
+        margin-top: 50px;
+    }
+}
+
+
+
