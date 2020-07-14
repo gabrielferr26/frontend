@@ -67,22 +67,24 @@ export default class Navbar extends React.Component {
         return (
             <div>
                 <nav style={{ backgroundColor: '#1976d2' }} className="navbar navbar-dark">
-                    <span className="navbar-brand ml-5" href="#">
-                        <img src={(require('../../assets/icons/LogoBizdirectTeams.png'))}
-                            width="25"
-                            height="25"
-                            className="d-inline-block align-center mr-3 ml-2"
-                            alt="Logotipo Bizdirect by Teams" />
-                        <span
-                            style={{ fontFamily: 'BoldG', fontSize: 20 }}>
-                            Bizdirect
+                    <Link to={"/dashboard"}>
+                        <span className="navbar-brand ml-5">
+                            <img src={(require('../../assets/icons/LogoBizdirectTeams.png'))}
+                                width="25"
+                                height="25"
+                                className="d-inline-block align-center mr-3 ml-2"
+                                alt="Logotipo Bizdirect by Teams" />
                             <span
-                                style={{ fontFamily: 'LightG' }}
-                                className="ml-2">
-                                by Teams
+                                style={{ fontFamily: 'BoldG', fontSize: 20 }}>
+                                Bizdirect
+                            <span
+                                    style={{ fontFamily: 'LightG' }}
+                                    className="ml-2">
+                                    by Teams
+                            </span>
                             </span>
                         </span>
-                    </span>
+                    </Link>
                     <div className="d-flex justify-content-end">
                         {this.state.tipo === 2 || this.state.tipo === 3 ?
                             <Link to={"/user/" + this.state.id}><Avatar style={{ marginRight: 15, marginTop: 7, width: 35, height: 35 }}
