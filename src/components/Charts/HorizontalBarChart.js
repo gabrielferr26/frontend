@@ -15,7 +15,7 @@ class App extends React.Component {
 
             series: [{
                 name: 'series1',
-                data: [44, 55, 30, 50, 60, 30, 70, 80, 30, 57, 75, 50]
+                data: [44, 55, 30, 50, 60, 30, 70]
 
             }],
 
@@ -77,7 +77,7 @@ class App extends React.Component {
                 },
 
                 xaxis: {
-                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                    categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul'],
                 },
                 yaxis: {
                     title: {
