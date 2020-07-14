@@ -24,7 +24,7 @@ export default class CardUsers extends React.Component {
 
     componentDidMount() {
         //Contagem de Interesses
-        const contarInteresses = "http://localhost:3000/contagem/interesses";
+        const contarInteresses = "https://glacial-stream-93235.herokuapp.com/contagem/interesses";
         axios.get(contarInteresses)
             .then(res => {
                 if (res.data.success) {

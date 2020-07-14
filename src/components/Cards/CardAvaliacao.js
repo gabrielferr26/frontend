@@ -24,7 +24,7 @@ export default class CardUsers extends React.Component {
 
     componentDidMount() {
         //Avaliação de um Dado User
-        const contarUsers = "http://localhost:3000/contagem/users";
+        const contarUsers = "https://glacial-stream-93235.herokuapp.com//contagem/users";
         axios.get(contarUsers)
             .then(res => {
                 if (res.data.success) {

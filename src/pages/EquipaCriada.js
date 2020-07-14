@@ -34,7 +34,7 @@ import EventAvailableTwoToneIcon from '@material-ui/icons/EventAvailableTwoTone'
 
 
 
-const baseURL = "http://localhost:3000"
+const baseURL = "https://glacial-stream-93235.herokuapp.com"
 
 export default class EquipaCriada extends React.Component {
 
@@ -87,7 +87,7 @@ export default class EquipaCriada extends React.Component {
 
     componentDidMount() {
 
-        const developers = "http://localhost:3000/lista/developers";
+        const developers = "https://glacial-stream-93235.herokuapp.com/lista/developers";
         axios.get(developers)
             .then(res => {
                 if (res.data.success) {
@@ -102,7 +102,7 @@ export default class EquipaCriada extends React.Component {
             });
 
         //Lista de Todos os Funcionarios
-        const allusers = "http://localhost:3000/lista/users";
+        const allusers = "https://glacial-stream-93235.herokuapp.com/lista/users";
         axios.get(allusers)
             .then(res => {
                 if (res.data.success) {
@@ -643,7 +643,7 @@ export default class EquipaCriada extends React.Component {
 
     //Eliminar a Criação da Equipa
     sendDelete(projetoId, equipaId, userId) {
-        const baseUrl = "http://localhost:3000/teamlead/eliminar/equipa/projeto"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/teamlead/eliminar/equipa/projeto"
 
         this.state.listaUsers.map((data, index) => {
             data.users.map((data1, index1) => {
@@ -674,7 +674,7 @@ export default class EquipaCriada extends React.Component {
 
     //Eliminar um User
     sendDeleteUser(userId, teamId) {
-        const baseUrl = "http://localhost:3000/teamlead/eliminar/equipa/projeto/user"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/teamlead/eliminar/equipa/projeto/user"
 
         axios.post(baseUrl, {
             id: userId,
@@ -697,7 +697,7 @@ export default class EquipaCriada extends React.Component {
 
     //Adicionar um User
     sendUser(userId, teamId) {
-        const baseUrl = "http://localhost:3000/teamlead/adicionar/equipa/projeto/user"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/teamlead/adicionar/equipa/projeto/user"
         axios.post(baseUrl, {
             id: userId,
             idEquipa: teamId
@@ -733,7 +733,7 @@ export default class EquipaCriada extends React.Component {
         this.loadFillNewUsers()
         this.loadFillNewDevelopers()
 
-        const developers = "http://localhost:3000/lista/developers";
+        const developers = "https://glacial-stream-93235.herokuapp.com/lista/developers";
         axios.get(developers)
             .then(res => {
                 if (res.data.success) {
@@ -748,7 +748,7 @@ export default class EquipaCriada extends React.Component {
             });
 
         //Lista de Todos os Funcionarios
-        const allusers = "http://localhost:3000/lista/users";
+        const allusers = "https://glacial-stream-93235.herokuapp.com/lista/users";
         axios.get(allusers)
             .then(res => {
                 if (res.data.success) {
@@ -839,7 +839,7 @@ export default class EquipaCriada extends React.Component {
     }
 
     loadFillNewDevelopers() {
-        const developers = "http://localhost:3000/lista/developers";
+        const developers = "https://glacial-stream-93235.herokuapp.com/lista/developers";
         axios.get(developers)
             .then(res => {
                 if (res.data.success) {

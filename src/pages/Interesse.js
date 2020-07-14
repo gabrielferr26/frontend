@@ -27,7 +27,7 @@ import DraftsTwoToneIcon from '@material-ui/icons/DraftsTwoTone';
 import FiberManualRecordTwoToneIcon from '@material-ui/icons/FiberManualRecordTwoTone';
 
 
-const baseURL = "http://localhost:3000"
+const baseURL = "https://glacial-stream-93235.herokuapp.com"
 
 export default class Interesse extends React.Component {
 
@@ -201,7 +201,7 @@ export default class Interesse extends React.Component {
     //Eliminar um Interesse
     sendDeleteInteresse(interesseId1) {
 
-        const baseURL = "http://localhost:3000/admin/eliminar/interesse"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/eliminar/interesse"
 
         const datapost = {
             id: interesseId1,

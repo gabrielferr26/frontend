@@ -4,7 +4,7 @@ import axios from 'axios'
 class AuthService {
     login(email, password) {
         return axios
-            .post("http://localhost:3000/login", { email, password })
+            .post("https://glacial-stream-93235.herokuapp.com/login", { email, password })
             .then(res => {
                 if (res.data.token) {
                     localStorage.setItem('funcionario', JSON.stringify(res.data))

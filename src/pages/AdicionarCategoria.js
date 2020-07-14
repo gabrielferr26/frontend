@@ -85,7 +85,7 @@ export default class AdicionarCategoria extends React.Component {
                 title: 'A Categoria ' + this.state.campCategoria + ' foi adicionada'
 
             })
-            const baseURL = "http://localhost:3000/adicionar/categoria"
+            const baseURL = "https://glacial-stream-93235.herokuapp.com/adicionar/categoria"
             const datapost = {
                 categoria: this.state.campCategoria
             }

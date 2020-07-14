@@ -74,7 +74,7 @@ export default class AdicionarHabilitação extends React.Component {
     //Lista de Tipo de Habilitacoes
 
     onSave() {
-        const baseURL = "http://localhost:3000/admin/adicionar/tipohabilitacao"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/adicionar/tipohabilitacao"
         const datapost = {
             curso: this.state.campHabilitacao
         }

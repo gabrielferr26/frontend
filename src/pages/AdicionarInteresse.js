@@ -35,7 +35,7 @@ export default class Add extends React.Component {
     componentDidMount() {
 
         //Lista de Interesses
-        const interesses = "http://localhost:3000/lista/interesses";
+        const interesses = "https://glacial-stream-93235.herokuapp.com/lista/interesses";
         axios.get(interesses)
             .then(res => {
                 if (res.data.success) {
@@ -105,7 +105,7 @@ export default class Add extends React.Component {
 
         var igual = []
 
-        const baseURL = "http://localhost:3000/admin/adicionar/interesse"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/adicionar/interesse"
         const datapost = {
             interesse: this.state.campInteresse,
         }

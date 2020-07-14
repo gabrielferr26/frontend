@@ -34,7 +34,7 @@ export default class ListaCargos extends React.Component {
     componentDidMount() {
 
         //Lista de Team Leads
-        const teamlead = "http://localhost:3000/lista/teamlead";
+        const teamlead = "https://glacial-stream-93235.herokuapp.com/lista/teamlead";
         axios.get(teamlead)
             .then(res => {
                 if (res.data.success) {

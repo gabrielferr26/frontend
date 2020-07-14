@@ -31,7 +31,7 @@ export default class CardTeamLead extends React.Component {
   componentDidMount() {
 
     //Lista de Team Leads
-    const url = "http://localhost:3000/lista/teamlead";
+    const url = "https://glacial-stream-93235.herokuapp.com/lista/teamlead";
     axios.get(url, { headers: authHeader() })
       .then(res => {
         console.log(res)

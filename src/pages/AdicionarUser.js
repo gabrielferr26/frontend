@@ -239,7 +239,7 @@ export default class AdicionarFuncionario extends React.Component {
     componentDidMount() {
 
         //Lista de Cargos
-        const cargos = "http://localhost:3000/lista/cargos";
+        const cargos = "https://glacial-stream-93235.herokuapp.com/lista/cargos";
         axios.get(cargos)
             .then(res => {
                 if (res.data.success) {
@@ -257,7 +257,7 @@ export default class AdicionarFuncionario extends React.Component {
 
 
         //Lista de Competencias
-        const competencias = "http://localhost:3000/lista/skills";
+        const competencias = "https://glacial-stream-93235.herokuapp.com/lista/skills";
         axios.get(competencias)
             .then(res => {
                 if (res.data.success) {
@@ -274,7 +274,7 @@ export default class AdicionarFuncionario extends React.Component {
             });
 
         //Lista de Interesses
-        const interesses = "http://localhost:3000/lista/interesses";
+        const interesses = "https://glacial-stream-93235.herokuapp.com/lista/interesses";
         axios.get(interesses)
             .then(res => {
                 if (res.data.success) {
@@ -291,7 +291,7 @@ export default class AdicionarFuncionario extends React.Component {
             });
 
         //Tipo de Habilitacao
-        const habilitacoes = "http://localhost:3000/lista/cursos";
+        const habilitacoes = "https://glacial-stream-93235.herokuapp.com/lista/cursos";
         axios.get(habilitacoes)
             .then(res => {
                 if (res.data.success) {
@@ -592,7 +592,7 @@ export default class AdicionarFuncionario extends React.Component {
         else {
 
 
-            const baseURL = "http://localhost:3000/admin/adicionar/user"
+            const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/adicionar/user"
             /*const formData = new FormData();
             formData.append("file", this.state.selectFile);*/
 

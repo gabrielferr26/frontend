@@ -162,7 +162,7 @@ export default class CriarEquipa extends React.Component {
         }
 
         //Lista de Competencias
-        const skills = "http://localhost:3000/lista/skills";
+        const skills = "https://glacial-stream-93235.herokuapp.com/lista/skills";
         axios.get(skills)
             .then(res => {
                 if (res.data.success) {
@@ -179,7 +179,7 @@ export default class CriarEquipa extends React.Component {
             });
 
         //Lista de Interesses
-        const interesses = "http://localhost:3000/lista/interesses";
+        const interesses = "https://glacial-stream-93235.herokuapp.com/lista/interesses";
         axios.get(interesses)
             .then(res => {
                 if (res.data.success) {
@@ -195,7 +195,7 @@ export default class CriarEquipa extends React.Component {
                 alert("ERRO: " + error + "URL" + interesses);
             });
 
-        const equipas = "http://localhost:3000/lista/equipas";
+        const equipas = "https://glacial-stream-93235.herokuapp.com/lista/equipas";
         axios.get(equipas)
             .then(res => {
                 if (res.data.success) {
@@ -423,7 +423,7 @@ export default class CriarEquipa extends React.Component {
     //Guardar Informações da Equipa
     sendSave() {
 
-        const baseURL = "http://localhost:3000/teamlead/criar/equipa"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/teamlead/criar/equipa"
         const datapost = {
 
             idTeamLead: this.state.id,

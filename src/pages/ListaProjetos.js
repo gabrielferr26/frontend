@@ -62,7 +62,7 @@ export default class ListaProjetos extends React.Component {
         }
 
         //Lista de Projetos
-        const projetos = "http://localhost:3000/lista/projetos";
+        const projetos = "https://glacial-stream-93235.herokuapp.com/lista/projetos";
         axios.get(projetos)
             .then(res => {
                 if (res.data.success) {

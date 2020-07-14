@@ -24,7 +24,7 @@ export default class CardUsers extends React.Component {
     componentDidMount() {
 
         //Contagem de Skills
-        const contarSkills = "http://localhost:3000/contagem/skills";
+        const contarSkills = "https://glacial-stream-93235.herokuapp.com/contagem/skills";
         axios.get(contarSkills)
             .then(res => {
                 if (res.data.success) {

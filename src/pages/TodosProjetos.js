@@ -61,7 +61,7 @@ export default class ListaDeveloper extends React.Component {
             })
         }
 
-        const projetos = "http://localhost:3000/lista/projetos";
+        const projetos = "https://glacial-stream-93235.herokuapp.com/lista/projetos";
         axios.get(projetos)
             .then(res => {
                 if (res.data.success) {
@@ -204,7 +204,7 @@ export default class ListaDeveloper extends React.Component {
 
     sendDeleteProjeto(projetoId, equipaId) {
 
-        const baseUrl = "http://localhost:3000/teamlead/eliminar/equipa/projeto"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/teamlead/eliminar/equipa/projeto"
 
         axios.post(baseUrl, {
             id: projetoId,
@@ -234,7 +234,7 @@ export default class ListaDeveloper extends React.Component {
 
     loadFillTable() {
 
-        const projetos = "http://localhost:3000/lista/projetos";
+        const projetos = "https://glacial-stream-93235.herokuapp.com/lista/projetos";
         axios.get(projetos)
             .then(res => {
                 if (res.data.success) {

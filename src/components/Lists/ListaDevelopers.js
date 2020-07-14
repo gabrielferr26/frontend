@@ -28,7 +28,7 @@ export default class ListaDevelopers extends React.Component {
     componentDidMount() {
 
         //Lista de Developers
-        const developers = "http://localhost:3000/lista/developers";
+        const developers = "https://glacial-stream-93235.herokuapp.com/lista/developers";
         axios.get(developers)
             .then(res => {
                 if (res.data.success) {

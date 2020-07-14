@@ -31,7 +31,7 @@ export default class ListaCompetencias extends React.Component {
     componentDidMount() {
 
         //Lista de Funcionarios
-        const competencias = "http://localhost:3000/lista/skills";
+        const competencias = "https://glacial-stream-93235.herokuapp.com/lista/skills";
         axios.get(competencias)
             .then(res => {
                 if (res.data.success) {

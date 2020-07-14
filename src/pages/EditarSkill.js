@@ -18,7 +18,7 @@ import { Button } from "react-bootstrap";
 //Importação de Icones
 import AddCircleOutlineTwoToneIcon from '@material-ui/icons/AddCircleOutlineTwoTone';
 
-const baseURL = "http://localhost:3000"
+const baseURL = "https://glacial-stream-93235.herokuapp.com"
 
 export default class EditarSkills extends React.Component {
 
@@ -51,7 +51,7 @@ export default class EditarSkills extends React.Component {
 
         //Dados da Skill
         let skillId = this.props.match.params.id;
-        const url1 = "http://localhost:3000/info/skill/" + skillId;
+        const url1 = "https://glacial-stream-93235.herokuapp.com/info/skill/" + skillId;
         axios.get(url1)
             .then(res => {
                 if (res.data.success) {
@@ -73,7 +73,7 @@ export default class EditarSkills extends React.Component {
                 alert("Error Server " + error)
             })
 
-        const url = "http://localhost:3000/lista/categorias";
+        const url = "https://glacial-stream-93235.herokuapp.com/lista/categorias";
         axios.get(url)
             .then(res => {
                 if (res.data.success) {
@@ -187,7 +187,7 @@ export default class EditarSkills extends React.Component {
             igual = data.skill
         })
 
-        const baseURL = "http://localhost:3000/admin/update/skill"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/update/skill"
         const datapost = {
             competencia: this.state.campCompetencia,
             categoria: this.state.selectCategoria

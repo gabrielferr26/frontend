@@ -28,7 +28,7 @@ export default class ListaInteresses extends React.Component {
     componentDidMount() {
 
         //Lista de Interesses
-        const interesses = "http://localhost:3000/lista/interesses";
+        const interesses = "https://glacial-stream-93235.herokuapp.com/lista/interesses";
         axios.get(interesses)
             .then(res => {
                 if (res.data.success) {

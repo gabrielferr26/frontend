@@ -92,7 +92,7 @@ export default class AdicionarProjeto extends React.Component {
 
     componentDidMount() {
 
-        const url = "http://localhost:3000/lista/developers";
+        const url = "https://glacial-stream-93235.herokuapp.com/lista/developers";
         axios.get(url)
             .then(res => {
                 if (res.data.success) {
@@ -109,7 +109,7 @@ export default class AdicionarProjeto extends React.Component {
             });
 
         //Lista de Team Lead
-        const url1 = "http://localhost:3000/lista/teamlead";
+        const url1 = "https://glacial-stream-93235.herokuapp.com/lista/teamlead";
         axios.get(url1)
             .then(res => {
                 if (res.data.success) {
@@ -330,7 +330,7 @@ export default class AdicionarProjeto extends React.Component {
             })
         }
         else {
-            const baseURL = "http://localhost:3000/admin/adicionar/projeto"
+            const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/adicionar/projeto"
             const datapost = {
                 nomeProjeto: this.state.campNome,
                 nomeEquipa: this.state.campEquipa,

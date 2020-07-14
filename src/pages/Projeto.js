@@ -23,7 +23,7 @@ import CalendarTodayTwoToneIcon from '@material-ui/icons/CalendarTodayTwoTone';
 import { Button, Card, CardDeck, CardGroup } from 'react-bootstrap';
 
 
-const baseURL = "http://localhost:3000"
+const baseURL = "https://glacial-stream-93235.herokuapp.com"
 
 
 export default class Projeto extends React.Component {
@@ -99,7 +99,7 @@ export default class Projeto extends React.Component {
             })
 
 
-        const projetos = "http://localhost:3000/lista/projetos/users";
+        const projetos = "https://glacial-stream-93235.herokuapp.com/lista/projetos/users";
         axios.get(projetos)
             .then(res => {
                 if (res.data.success) {
@@ -319,7 +319,7 @@ export default class Projeto extends React.Component {
     }
 
     sendDeleteProjeto() {
-        const baseUrl = "http://localhost:3000/teamlead/eliminar/equipa/projeto"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/eliminar/equipa/projeto"
         this.state.listaProjetos.map((data, index) => {
             if (this.state.campID === data.teamId) {
                 axios.post(baseUrl, {
@@ -349,7 +349,7 @@ export default class Projeto extends React.Component {
 
     UpdateEstado(projetoId) {
 
-        const baseUrl = "http://localhost:3000/teamlead/update/estado/projeto"
+        const baseUrl = "https://glacial-stream-93235.herokuapp.com/teamlead/update/estado/projeto"
 
         this.state.listaProjetos.map((data, index) => {
             axios.post(baseUrl, {

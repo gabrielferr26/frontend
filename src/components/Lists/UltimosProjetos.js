@@ -16,7 +16,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ArrowForwardIosTwoToneIcon from '@material-ui/icons/ArrowForwardIosTwoTone';
 
 
-const baseURL = "http://localhost:3000"
+const baseURL = "https://glacial-stream-93235.herokuapp.com"
 
 export default class ListaProjetosTeamLead extends React.Component {
 
@@ -53,7 +53,7 @@ export default class ListaProjetosTeamLead extends React.Component {
         }
 
         //Lista de Projetos de um Dado Utilizador
-        const projetos = "http://localhost:3000/lista/projetos/novos";
+        const projetos = "https://glacial-stream-93235.herokuapp.com/lista/projetos/novos";
         axios.get(projetos)
             .then(res => {
                 if (res.data.success) {

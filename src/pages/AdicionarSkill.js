@@ -49,7 +49,7 @@ export default class AdicionarCompetencia extends React.Component {
 
     componentDidMount() {
 
-        const url = "http://localhost:3000/lista/categorias";
+        const url = "https://glacial-stream-93235.herokuapp.com/lista/categorias";
         axios.get(url)
             .then(res => {
                 if (res.data.success) {
@@ -67,7 +67,7 @@ export default class AdicionarCompetencia extends React.Component {
 
 
         //Lista de Skills
-        const competencias = "http://localhost:3000/lista/skills";
+        const competencias = "https://glacial-stream-93235.herokuapp.com/lista/skills";
         axios.get(competencias)
             .then(res => {
                 if (res.data.success) {
@@ -176,7 +176,7 @@ export default class AdicionarCompetencia extends React.Component {
             igual = data.skill
         })
 
-        const baseURL = "http://localhost:3000/admin/adicionar/skill"
+        const baseURL = "https://glacial-stream-93235.herokuapp.com/admin/adicionar/skill"
         const datapost = {
             competencia: this.state.campCompetencia,
             categoria: this.state.selectCategoria
