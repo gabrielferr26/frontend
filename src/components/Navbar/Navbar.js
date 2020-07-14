@@ -88,7 +88,7 @@ export default class Navbar extends React.Component {
                             <Link to={"/user/" + this.state.id}><Avatar style={{ marginRight: 15, marginTop: 7, width: 35, height: 35 }}
                                 alt={this.state.nome}
                                 src={this.state.avatarURL} /></Link> : null}
-                        <span
+                        <span className="d-none d-sm-block"
                             style={{ marginTop: 12, color: 'white', fontFamily: 'LightG', marginRight: 20 }}>
                             {this.state.nome}
                         </span>
