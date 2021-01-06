@@ -14,7 +14,7 @@
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.2.5",
     "apexcharts": "^3.19.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
     "chroma-js": "^2.1.0",
